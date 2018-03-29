@@ -34,32 +34,51 @@
 	}
 </style>
 <script>
-var i=0;
-var a=['#f00','#0f0','#00f']
-setInterval(function(){
-	i++;
-	console.log(":::START::: color changing for class: '<?php echo $selektory->get_name(999999); ?>' at "+(i*0.5)+((i%2==0)?".0":"")+"s - changing color into: "+a[i%3]);
-	for(var j=0;j<document.getElementsByClassName('<?php echo $selektory->get_name(999999); ?>').length;j++){
-		document.getElementsByClassName('<?php echo $selektory->get_name(999999); ?>')[j].style.color=a[i%3];
-		console.log("element with class nr."+(1+j));
-	}
-	console.log(":::END:::");
-	console.log("- - - - -");
-}, 500);
+	var i=0;
+	var a=['#f00','#0f0','#00f'];
+	setInterval(function(){
+		i++;
+		console.log(":::START::: color changing for class: '<?php echo $selektory->get_name(999999); ?>' at "+(i*0.5)+((i%2==0)?".0":"")+"s - changing color into: "+a[i%3]);
+		for(var j=0;j<document.getElementsByClassName('<?php echo $selektory->get_name(999999); ?>').length;j++){
+			document.getElementsByClassName('<?php echo $selektory->get_name(999999); ?>')[j].style.color=a[i%3];
+			console.log("element with class nr."+(1+j));
+		}
+		console.log(":::END:::");
+		console.log("- - - - -");
+	}, 500);
 </script>
 <h1 class="<?php echo $selektory->get_name(0); ?>">
 	Title with class named "<mark><?php echo $selektory->get_name(0); ?></mark>"
 </h1>
 <p class="<?php echo $selektory->get_name(1)." ".$selektory->get_name(2); ?>" id="<?php echo $selektory->get_name(880); ?>">
-	paragrah with classes named "<mark><?php echo $selektory->get_name(1); ?></mark>" and "<mark><?php echo $selektory->get_name(2); ?></mark>" and id "<mark><?php echo $selektory->get_name(880); ?></mark>"
+	paragrah with classes named "
+	<mark>
+		<?php echo $selektory->get_name(1); ?>
+	</mark>
+	" and "
+	<mark>
+		<?php echo $selektory->get_name(2); ?>
+	</mark>
+	" and with id "
+	<mark>
+		<?php echo $selektory->get_name(880); ?>
+	</mark>"
 </p>
 <br>
 <br>
 <div>
-	current names length: <span class="<?php echo $selektory->get_name(999999); ?>"><?php echo TEST_LENGTH_NAMES; ?></span>
+	current names length: 
+	<span class="<?php echo $selektory->get_name(999999); ?>">
+		<?php echo TEST_LENGTH_NAMES; ?>
+	</span>
 	<br>
 	<br>
-	maximum number of names for <?php echo TEST_LENGTH_NAMES; ?> char length: <span class="<?php echo $selektory->get_name(999999); ?>"><?php echo pow(26, TEST_LENGTH_NAMES); ?></span>
+	maximum number of names for 
+	<?php echo TEST_LENGTH_NAMES; ?>
+	char length: 
+	<span class="<?php echo $selektory->get_name(999999); ?>">
+		<?php echo pow(26, TEST_LENGTH_NAMES); ?>
+	</span>
 </div>
 <br>
 <br>
