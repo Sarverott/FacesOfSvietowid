@@ -1,6 +1,6 @@
 <?php 
 	/*
-	** ###### PHP Selector Generator v1.0.0 ######
+	** ###### Names Of Odin v1.0.0 ######
 	** by Adam Borucki (Sarverott) 2018
 	** MIT Licence
 	*/
