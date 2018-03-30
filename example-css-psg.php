@@ -1,6 +1,6 @@
 <?php 
 	define("TEST_LENGTH_NAMES", 5);
-	include "psg.php";
+	include "names-of-odin.php";
 	$selektory=new namesGenotype(TEST_LENGTH_NAMES);
 ?>
 <style>
